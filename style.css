@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #e8dfd1;
+  background-color: #e5e7eb; /* neutro claro */
   position: sticky;
   top: 0;
 }
@@ -14,21 +14,21 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #3e3e3e;
+  color: #374151;
   font-weight: bold;
   transition: 0.3s;
   font-size: 20px;
 }
 
 nav a:hover {
-  color: #8b6b4d;
+  color: #6b7280;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5efe6;
-  color: #3e3e3e;
+  background-color: #f3f4f6; /* neutro claro */
+  color: #374151;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -46,15 +46,14 @@ html {
   padding: 60px 20px;
   gap: 20px;
 }
+
+/* FOTO AUMENTADA */
 .topo img {
-  width: 220px;
-  height: 220px;
-
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-
   object-fit: cover;
-
-  border: 5px solid #c7a17a;
+  border: 5px solid #d1d5db;
 }
 
 .topo h1 {
@@ -65,7 +64,7 @@ html {
 .topo h2 {
   margin: 0;
   font-size: 40px;
-  color: #8b6b4d;
+  color: #4b5563;
 }
 
 .topo p {
@@ -74,7 +73,7 @@ html {
   font-size: 20px;
 }
 
-
+/* SOBRE */
 
 .sobre {
   display: flex;
@@ -82,7 +81,7 @@ html {
   align-items: center;
   text-align: center;
   padding: 80px 20px;
-  background-color: #e8dfd1;
+  background-color: #e5e7eb;
   font-size: 25px;
 }
 
@@ -91,6 +90,8 @@ html {
   line-height: 1.8;
   font-size: 20px;
 }
+
+/* HABILIDADES */
 
 .habilidades {
   padding: 80px 20px;
@@ -107,7 +108,7 @@ html {
 }
 
 .card {
-  background-color: #e8dfd1;
+  background-color: #e5e7eb;
   padding: 20px;
   width: 220px;
   border-radius: 12px;
@@ -120,31 +121,25 @@ html {
 
 .card p {
   text-align: left;
-
   line-height: 1.7;
-
   font-size: 15px;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  background-color: #d8c3a5;
+  background-color: #d1d5db;
 }
 
 .card h3 {
   margin: 0;
 }
 
-.card p {
-  line-height: 1.5;
-  font-size: 15px;
-}
+/* PROJETOS */
 
 .projetos {
   padding: 80px 20px;
   text-align: center;
 }
-
 
 .projetos h2 {
   font-size: 35px;
@@ -154,6 +149,7 @@ html {
   font-size: 26px;
   text-align: left;
 }
+
 .projetos-cards {
   display: flex;
   justify-content: center;
@@ -163,7 +159,7 @@ html {
 }
 
 .projeto-card {
-  background-color: #e8dfd1;
+  background-color: #e5e7eb;
   width: 260px;
   padding: 25px;
   border-radius: 12px;
@@ -172,7 +168,7 @@ html {
 
 .projeto-card:hover {
   transform: translateY(-10px);
-  background-color: #d8c3a5
+  background-color: #d1d5db;
 }
 
 .projeto-card p {
@@ -180,10 +176,12 @@ html {
   line-height: 1.6;
 }
 
+/* CONTATO */
+
 .contato {
   padding: 40px 20px;
   text-align: center;
-  background-color: #e8dfd1;
+  background-color: #e5e7eb;
 }
 
 .contato h3 {
@@ -201,11 +199,11 @@ html {
 
 .contato a {
   text-decoration: none;
-  color: #3e3e3e;
+  color: #374151;
   font-weight: bold;
   transition: 0.3s;
 }
 
 .contato a:hover {
-  color: #8b6b4d;
+  color: #6b7280;
 }
