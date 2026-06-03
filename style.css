@@ -36,15 +36,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.topo {
-  min-height: 82vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 60px 20px;
-  gap: 20px;
+.topo img {
+  width: 220px;
+  height: 220px;
+  border-radius: 12px; /* quadrada com cantos levemente arredondados */
+  object-fit: cover;
+  border: 5px solid #d1d5db;
 }
 
 /* FOTO AUMENTADA */
