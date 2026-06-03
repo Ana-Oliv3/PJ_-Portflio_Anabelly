@@ -1,99 +1,117 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+/* HEADER */
 header {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #e5e7eb; /* neutro claro */
+  background-color: #e5e7eb;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   color: #374151;
   font-weight: bold;
+  font-size: 18px;
   transition: 0.3s;
-  font-size: 20px;
 }
 
 nav a:hover {
   color: #6b7280;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6; /* neutro claro */
-  color: #374151;
-  font-family: 'Montserrat', sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.topo img {
-  width: 220px;
-  height: 220px;
-  border-radius: 12px; /* quadrada com cantos levemente arredondados */
-  object-fit: cover;
-  border: 5px solid #d1d5db;
-}
-
-/* FOTO AUMENTADA */
-.topo img {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #d1d5db;
+/* TOPO */
+.topo {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  gap: 15px;
 }
 
 .topo h1 {
-  font-size: 60px;
-  margin: 0;
+  font-size: 55px;
+  margin-bottom: 10px;
 }
 
 .topo h2 {
-  margin: 0;
-  font-size: 40px;
+  font-size: 30px;
   color: #4b5563;
 }
 
 .topo p {
   max-width: 600px;
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+/* FOTO */
+.topo img {
+  width: 230px;
+  height: 230px;
+  border-radius: 16px; /* quadrada moderna */
+  object-fit: cover;
+  border: 5px solid #d1d5db;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.topo img:hover {
+  transform: scale(1.05);
+}
+
+/* SEÇÕES */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  color: #374151;
+  margin-bottom: 20px;
 }
 
 /* SOBRE */
-
-.sobre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 80px 20px;
-  background-color: #e5e7eb;
-  font-size: 25px;
-}
-
 .sobre p {
-  max-width: 700px;
+  max-width: 750px;
+  margin: 0 auto;
   line-height: 1.8;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* HABILIDADES */
-
 .habilidades {
-  padding: 80px 20px;
   text-align: center;
-  font-size: 25px;
 }
 
 .cards {
@@ -106,75 +124,57 @@ html {
 
 .card {
   background-color: #e5e7eb;
-  padding: 20px;
   width: 220px;
+  padding: 20px;
   border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: center;
-  gap: 10px;
-}
-
-.card p {
-  text-align: left;
-  line-height: 1.7;
-  font-size: 15px;
+  transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   background-color: #d1d5db;
 }
 
 .card h3 {
-  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* PROJETOS */
-
-.projetos {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.projetos h2 {
-  font-size: 35px;
-}
-
-.projetos h3 {
-  font-size: 26px;
-  text-align: left;
-}
-
 .projetos-cards {
   display: flex;
   justify-content: center;
-  gap: 25px;
   flex-wrap: wrap;
+  gap: 20px;
   margin-top: 40px;
 }
 
 .projeto-card {
   background-color: #e5e7eb;
   width: 260px;
-  padding: 25px;
+  padding: 20px;
   border-radius: 12px;
   transition: 0.3s;
 }
 
 .projeto-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   background-color: #d1d5db;
 }
 
+.projeto-card h3 {
+  margin-bottom: 10px;
+}
+
 .projeto-card p {
-  text-align: left;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* CONTATO */
-
 .contato {
   padding: 40px 20px;
   text-align: center;
@@ -182,8 +182,7 @@ html {
 }
 
 .contato h3 {
-  margin-bottom: 25px;
-  font-size: 25px;
+  margin-bottom: 20px;
 }
 
 .contato-links {
@@ -191,7 +190,6 @@ html {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  font-size: 20px;
 }
 
 .contato a {
@@ -203,4 +201,25 @@ html {
 
 .contato a:hover {
   color: #6b7280;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  .topo h1 {
+    font-size: 40px;
+  }
+
+  .topo h2 {
+    font-size: 22px;
+  }
+
+  .card,
+  .projeto-card {
+    width: 90%;
+  }
+
+  nav {
+    gap: 15px;
+  }
 }
